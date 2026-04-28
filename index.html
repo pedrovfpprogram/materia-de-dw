@@ -1,33 +1,32 @@
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu site</title>
+    <title>Meu Site</title>
 </head>
 <body>
-    <table>
-        <thead>
-            <th>Nome</th>
-            <th>Idade</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Pedro</td>
-                <td>25</td>
-            </tr>
-        </tbody>
-    </table>
-    <!--Isso é um formulário Método POST
     <form action="/" method="POST">
-        <label for="email">Email:</label><br/>
-        <input type="email" name="email"/> <br/>
-        <label for="senha">Senha:</label> <br/>
-        <input type="password" name="senha"> <br/>
-        <label for="datanasc">Data de Nascimento:</label><br/>
-        <input type="date" name="datanasc"> <br/>
-        <input type="submit" value="Enviar"> 
-    </form>-->
-
+        <fieldset>
+            <legend>Cadastro</legend>
+            <label for="nome">Nome:</label><br />
+            <input type="text" name="nome"><br />
+            <label for="e-mail">E-mail:</label><br />
+            <input type="e-mail" name="e-mail"><br />
+            <label for="senha">Senha:</label><br />
+            <input type="password" name="senha"><br />
+            <label for="datanasc">Data de Nascimento:</label><br />
+            <input type="date" name="datanasc"><br />
+            <label for="horadenasc">Hora de Nascimento</label><br />
+            <input type="time" name="horadenasc"><br />
+            <label for="sexo">Sexo:</label><br />
+            <input type="radio" name="sexo" value="masculino"> Masculino<br />
+            <input type="radio" name="sexo" value="feminino"> Feminino<br />
+            <label for="linguagens">Linguagens:</label><br />
+            <input type="checkbox" name="linguagens" value="python"> Python<br />
+            <input type="checkbox" name="linguagens" value="java"> Java<br />
+            <input type="checkbox" name="linguagens" value="c++"> C++<br />
+            <input type="submit" />
+        </fieldset>
+    </form>
 </body>
 </html>
